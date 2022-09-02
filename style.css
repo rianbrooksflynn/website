@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Source+Sans+Pro&display=swap');
+
+* {
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: aliceblue;
+}
+
+header {
+    background-color: rgba(70, 130, 180, 0.7);
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+}
+
+#site-links {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
+
+.nav-button {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 125, 0.5);
+}
+
+.nav-button > span {
+    font-size: 15pt;
+    font-weight: bold;
+    color: midnightblue;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hamburger {
+    display: none;
+}
+
+#splash {
+    background: #36434d url("img/Sunlit_Water_Header_90.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+h1 {
+    font: 48pt 'Cormorant SC', serif;
+    color: white;
+    text-shadow: 0 0 0.4em darkblue;
+    text-align: center;
+    padding: 5vmin;
+    margin-top: 50%;
+    margin-bottom: 15%;
+}
+
+.about-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot-container {
+    flex: 0 1 100%;
+    min-width: 300px;
+    max-width: min(600px, 40vw);
+    height: auto;
+    margin: 50px;
+}
+
+#headshot-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    flex: 0 1 40vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.about-text h2 {
+    font: 24pt 'Cormorant SC', serif;
+    text-align: center;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.portfolio-container h2 {
+    font: 24pt 'Cormorant SC', serif;
+    text-align: center;
+}
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-items: center;
+    align-items: end;
+    margin: 60px;
+}
+
+.portfolio-item {
+    background-color: rgb(188, 210, 232);
+    height: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.portfolio-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.portfolio-image {
+    max-width: 85%;
+    max-height: 80%;
+    margin: 5% 5% 0 5%;
+}
+
+.portfolio-item p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font: 16pt 'Source Code Pro', sans-serif;
+    flex: 0 0 auto;
+}
+
+.button {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-window {
+    padding: 0.5em 1em;
+    background-color: rgba(70, 130, 180, 1);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.open-window:hover {
+    background-color: rgba(70, 130, 180, 0.5);
+}
+
+.window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.window-content {
+    background-color: aliceblue;
+    margin: 15% auto;
+    padding: 20px;
+    border: 5px solid rgba(70, 130, 180, 1);
+    border-radius: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.window-content h2 {
+    margin: 0;
+    padding-top: 12pt;
+    text-align: center;
+}
+
+.window-content a {
+    font: 24pt 'Cormorant SC', serif;
+}
+
+.window-content a:link {
+    color: rgb(18, 125, 215, 1);
+}
+
+.window-content a:visited {
+    color: rgb(67, 18, 215, 1);
+}
+
+.window-content a:hover {
+    color: rgba(70, 130, 180, 1);
+}
+
+.window-content h3 {
+    font-size: 14pt;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+.window-content p {
+    text-align: center;
+    margin: 0 5%;
+    padding-bottom: 1em;
+}
+
+.close-window {
+    padding: 0.5em 1em;
+    background-color: rgba(70, 130, 180, 1);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.close-window:hover {
+    background-color: rgba(70, 130, 180, 0.5);
+}
+
+/*.contacts-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: flex-start;*/
+/*    align-items: center;*/
+/*    margin-bottom: 3em;*/
+/*}*/
+
+/*.contacts-container h2 {*/
+/*    font: 24pt 'Cormorant SC', serif;*/
+/*}*/
+
+footer {
+    background-color: rgba(70, 130, 180, 0.5);
+    border-top: 3px solid midnightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer p {
+    flex: 0 0 auto;
+    margin: 0;
+    font-family: 'Cormorant SC', serif;
+    color: midnightblue;
+}
+
+footer #creator {
+    font-size: 26pt;
+    margin-top: 20px;
+}
+
+footer #year {
+    font-size: 16pt;
+    margin-bottom: 20px;
+}
+
+/* Mobile-friendly display */
+@media screen and (max-width: 800px) {
+    header {
+        overflow: hidden;
+    }
+
+    nav {
+        display: block;
+    }
+
+    #logo-container {
+        max-width: 40px;
+        max-height: 40px;
+        margin: 10px;
+    }
+
+    #site-links {
+        display: none;
+    }
+
+    #nav-home {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px 20px;
+        font-size: 29px;
+        color: midnightblue;
+    }
+
+    .hamburger:hover {
+        background-color: rgba(25, 25, 112, 0.5);
+        color: aliceblue;
+    }
+
+    .about-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headshot-container {
+        min-width: 200px;
+        max-width: min(400px, 80vw);
+        height: auto;
+        margin: 30px;
+    }
+
+    .portfolio-items {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 30px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rian Flynn, Actor</title>
+    <link rel="icon" type="image/x-icon" href="img/RF_Logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/fe3d9694ff.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div id="logo-container">
+            <img id="logo" src="img/RF_Logo.png" alt="RF">
+        </div>
+        <div id="site-links">
+            <div class="nav-button" id="nav-home" onclick="location.href='#home';" style="cursor: pointer;">
+                <span>Home</span>
+            </div>
+            <div class="nav-button" onclick="location.href='#about';" style="cursor: pointer;">
+                <span>About</span>
+            </div>
+            <div class="nav-button" onclick="location.href='#portfolio';" style="cursor: pointer;">
+                <span>Work</span>
+            </div>
+<!--            <div class="nav-button" onclick="location.href='#contacts';" style="cursor: pointer;">-->
+<!--                <span>Contact</span>-->
+<!--            </div>-->
+        </div>
+        <a href="javascript:void(0);" class="hamburger" onclick="mobileMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+</header>
+<section id="home">
+    <div id="splash">
+        <h1>Rian Flynn, Actor</h1>
+    </div>
+</section>
+<section id="about">
+    <div class="about-container">
+        <div class="headshot-container">
+            <img id="headshot-image" src="img/Rian_Flynn_Headshot.jpg" alt="Rian Flynn's headshot">
+        </div>
+        <div class="about-text">
+            <h2>About</h2>
+            <div class="bio-container">
+                <p>
+                    A Boston-based actor, Rian has played leading theater roles such as Fefu in <i>Fefu and Her Friends</i>
+                    and Martha in <i>The Misunderstanding</i>. With a Bachelor of Science from MIT in Physics and Theater Arts,
+                    they bring the focus and discipline of a scientist to their creativity and artistry. While at MIT, they
+                    worked with OBIE-award-winning directors Jay Scheib and Andrew Schneider and trained under Anna Kohler,
+                    David Gammons, and Keely Eastley.
+                </p>
+                <p>
+                    Fluent in Mandarin Chinese, Rian has played the role of Robert in the Chinese-language play
+                    <i>Who Killed Robert</i> <span lang="cmn">(誰殺了羅伯特)</span>. An avid musician and singer, they have
+                    played the violin for 16 years and also play piano, guitar, and ukulele. They look forward to bringing their
+                    acting skills to professional equity theaters, as well as film and TV.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio">
+    <div class="portfolio-container">
+        <h2>Work</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <div class="portfolio-image-container">
+                    <img class="portfolio-image" src="img/Fefu_Eats_You.jpg" alt="Rian Flynn in Fefu and Her Friends">
+                </div>
+                <p>Fefu and Her Friends</p>
+                <div class="button">
+                    <button id="fefu-open" class="open-window">Learn more</button>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-image-container">
+                    <img class="portfolio-image" src="img/The_Silence.jpg" alt="Rian Flynn in The Silence">
+                </div>
+                <p>The Silence</p>
+                <div class="button">
+                    <button id="silence-open" class="open-window">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fefu-window" class="window">
+        <div class="window-content">
+            <h2><a href="https://mta.mit.edu/fefuandherfriends" target="_blank" rel="noreferrer noopener">Fefu and Her Friends</a></h2>
+            <h3>November 2020</h3>
+            <p>
+                A virtual theater-yet-cinema live-streamed performance, directed by Jay Scheib at MIT. Starring Rian Flynn as
+                Fefu, the production featured eight actors performing remotely in real time, brought together on screen by
+                real-time effects processing.
+            </p>
+            <button id="fefu-close" class="close-window">Close</button>
+        </div>
+    </div>
+    <div id="silence-window" class="window">
+        <div class="window-content">
+            <h2><a href="https://arts.mit.edu/people/jay-scheibs-the-silence/" target="_blank" rel="noreferrer noopener">The Silence</a></h2>
+            <h3>December 2019</h3>
+            <p>
+                Theater and live cinema intersected in Jay Scheib's signature style as he re-envisioned Ingmar Bergman's
+                landmark film from 1963. The work-in-progress performance featured Rian Flynn as the on-stage camera operator.
+            </p>
+            <button id="silence-close" class="close-window">Close</button>
+        </div>
+    </div>
+</section>
+<!--<section id="contacts">-->
+<!--    <div class="contacts-container">-->
+<!--        <h2>Contact</h2>-->
+<!--        <p>-->
+<!--            Lorem ipsum dolor sit amet.-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</section>-->
+<footer>
+    <p id="creator">Rian Flynn</p>
+    <p id="year">2022</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
